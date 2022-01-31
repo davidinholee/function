@@ -1,0 +1,17 @@
+@import "../../styles/main";
+
+.main {
+  background-image: linear-gradient(to right, $turquoise, $green);
+  min-height: 100vh;
+}
+
+.center {
+  text-align: left;
+  color: white;
+  h1 {
+    color: $blue;
+  }
+  .link {
+    color: $purple;
+  }
+}

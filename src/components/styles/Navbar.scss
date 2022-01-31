@@ -1,0 +1,36 @@
+@import "../../styles/main";
+
+.search-bar {
+  margin-left: 50px;
+  .search-icon {
+    position: absolute;
+    opacity: 1;
+    left: 80px;
+    filter: invert(92%) sepia(0%) saturate(1162%) hue-rotate(207deg) brightness(89%) contrast(83%);
+    transition: opacity 0.3s ease-out;
+  }
+  input {
+    padding-left: 40px;
+    padding-right: 20px;
+    border-radius: .6em;
+    transition: padding 0.3s ease-in-out;
+    &:focus {
+      padding-left: 10px;
+    }
+  }
+  .form-control {
+    width: 320px !important;
+  }
+  input:focus + .search-icon {
+    opacity: 0;
+  }
+}
+
+.navbar-nav {
+  
+}
+
+.container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}

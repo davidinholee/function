@@ -1,0 +1,36 @@
+@import "../../styles/main";
+
+.row {
+  height: 100%;
+  text-align: left;
+}
+
+.left {
+  padding-top: 12rem;
+  background-color: $purple;
+  min-height: 100vh !important;
+  .catchphrase {
+    font-size: 2.2vw !important;
+  }
+  .earth {
+    width: fit-content;
+  }
+}
+
+.right {
+  margin-left: 7rem;
+  h1 {
+    color: $dark-grey;
+  }
+  .signup-form {
+    max-width: 600px;
+    color: $grey;
+    p {
+      display: inline;
+      color: $red;
+    }
+  }
+  .already {
+    color: $grey;
+  }
+}

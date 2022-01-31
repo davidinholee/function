@@ -1,0 +1,110 @@
+// Default Font
+* {
+  font-family: "DM Sans" !important;
+}
+
+// Additional Mixins
+.px-6 {
+  padding-left: 5rem!important;
+  padding-right: 5rem!important;
+}
+
+// Main Colors
+$purple: #B56FFB;
+$dark-grey: #525252;
+$grey: #6F7482;
+$light-grey: #C4C4C4;
+$light: #F8FAFC;
+$red: #ED0131;
+$blue: #4565DB;
+$turquoise: #62D1D9;
+$green: #15D97B;
+
+// Primary Button Color
+.btn-primary {
+  background-image: linear-gradient(to right, $purple, $blue);
+}
+
+// Primary Text Color
+.text-primary {
+  color: $blue !important;
+}
+
+// Form Placeholder Text Color
+form .form-control::-webkit-input-placeholder { 
+  color: $light-grey;
+}
+form .form-control::-moz-placeholder {
+  color: $light-grey;
+}
+form .form-control:-ms-input-placeholder {
+  color: $light-grey;
+}
+form .form-control:placeholder {
+  color: $light-grey;
+}
+
+// Form Text Field
+form input[type='text'], input[type='email'], input[type='password'] {
+  background-color: $light;
+  border: none;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  ::placeholder, :-ms-input-placeholder, ::-webkit-input-placeholder {
+      color: black !important;
+  }
+  &:focus {
+    background-color: $light;
+    outline: 2px solid $blue !important;
+    box-shadow: none !important;
+  }
+}
+
+// Form Search Field
+form .form-control {
+  &:focus {
+    outline: 2px solid $blue !important;
+    box-shadow: none !important;
+  }
+}
+
+// Form Button
+form button {
+  border: none !important;
+  &:focus {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+}
+
+// Form Checkbox
+form .form-check-input {
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  -o-appearance: none;
+  width:16px;
+  height:16px;
+  top: -1px;
+  border-radius: 3px;
+  border: 2px solid $light-grey;
+}
+form .form-check-input:checked {
+  background-color: $blue;
+  border: none;
+  &:after {
+    content: '\2714';
+    font-size: 14px;
+    position: absolute;
+    top: -2px;
+    left: 2px;
+    color: white;
+  }
+}
+form .form-check-label {
+  color: $light-grey;
+  margin-left: 5px;
+}
+form .form-check-input:checked + .form-check-label {
+  color: $grey;
+}
